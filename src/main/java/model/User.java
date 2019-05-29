@@ -1,6 +1,6 @@
 package model;
 
-@Entity
+//@Entity
 public class User {
 
     public User() {

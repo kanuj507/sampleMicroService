@@ -2,9 +2,9 @@ package dao.daoImpl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
 
 import common.AbstractDao;
 import dao.UserDao;
@@ -21,8 +21,11 @@ public class UserDaoImpl extends AbstractDao implements UserDao {
         pararmSource.addValue("fName", user.getfName());
         pararmSource.addValue("lName", user.getlName());
         pararmSource.addValue("userId", user.getUsrId());
-        
-        return this.getNamedParameterJdbcTemplate().queryForRowSet(SQL_INSERT, pararmSource);
+
+        // return
+        // this.getNamedParameterJdbcTemplate().queryForRowSet(SQL_INSERT,
+        // pararmSource);
+        return 0;
     }
 
     @Override

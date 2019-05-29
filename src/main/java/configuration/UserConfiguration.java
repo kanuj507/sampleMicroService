@@ -13,10 +13,10 @@ import service.serviceImpl.UserServiceImpl;
 @ComponentScan(value = { "component" })
 public class UserConfiguration {
 
-    @Bean
-    public UserService getMessageService() {
-        UserDao usrDao = new UserDaoImpl();
-        return new UserServiceImpl(usrDao);
-    }
+    // @Bean
+    // public UserService getMessageService() {
+    // UserDao usrDao = new UserDaoImpl();
+    // return new UserServiceImpl(usrDao);
+    // }
 
 }

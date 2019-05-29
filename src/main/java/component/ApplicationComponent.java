@@ -9,7 +9,7 @@ import service.UserService;
 public class ApplicationComponent {
 
     // field-based dependency injection
-    // @Autowired
+    @Autowired
     private UserService service;
 
     // constructor-based dependency injection
@@ -18,10 +18,10 @@ public class ApplicationComponent {
     // this.service=svc;
     // }
 
-    @Autowired
-    public void setService(UserService svc) {
-        this.service = svc;
-    }
+    // @Autowired
+    // public void setService(UserService svc) {
+    // this.service = svc;
+    // }
 
     // public boolean processMessage(String msg, String rec) {
     // // some magic like validation, logging etc

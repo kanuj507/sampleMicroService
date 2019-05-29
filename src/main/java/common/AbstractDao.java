@@ -40,4 +40,9 @@ public class AbstractDao {
         return this.namedParameterJdbcDaoSupport.getNamedParameterJdbcTemplate();
     }
 
+    public int searchUserByUserName(String userName) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
 }
